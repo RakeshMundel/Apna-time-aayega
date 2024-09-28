@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Math Quiz Game</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Math Quiz</h2>
+            <p>Test your math skills with this fun quiz game!</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>What is 7 x 6?</p>
+                <button onclick="submitAnswer('42')">42</button>
+                <button onclick="submitAnswer('48')">48</button>
+
+                <h3>Question 2</h3>
+                <p>What is the square root of 144?</p>
+                <button onclick="submitAnswer('12')">12</button>
+                <button onclick="submitAnswer('14')">14</button>
+
+                <h3>Question 3</h3>
+                <p>What is 15 + 27?</p>
+                <button onclick="submitAnswer('42')">42</button>
+                <button onclick="submitAnswer('40')">40</button>
+
+                <h3>Question 4</h3>
+                <p>What is 81 divided by 9?</p>
+                <button onclick="submitAnswer('9')">9</button>
+                <button onclick="submitAnswer('8')">8</button>
+
+                <h3>Question 5</h3>
+                <p>What is the result of 6^2?</p>
+                <button onclick="submitAnswer('36')">36</button>
+                <button onclick="submitAnswer('32')">32</button>
+
+                <h3>Question 6</h3>
+                <p>What is 18 - 7?</p>
+                <button onclick="submitAnswer('11')">11</button>
+                <button onclick="submitAnswer('10')">10</button>
+
+                <h3>Question 7</h3>
+                <p>What is 8 x 8?</p>
+                <button onclick="submitAnswer('64')">64</button>
+                <button onclick="submitAnswer('68')">68</button>
+
+                <h3>Question 8</h3>
+                <p>What is the value of pi (π) to 2 decimal places?</p>
+                <button onclick="submitAnswer('3.14')">3.14</button>
+                <button onclick="submitAnswer('3.13')">3.13</button>
+
+                <h3>Question 9</h3>
+                <p>What is the result of 5 + (3 x 4)?</p>
+                <button onclick="submitAnswer('17')">17</button>
+                <button onclick="submitAnswer('15')">15</button>
+
+                <h3>Question 10</h3>
+                <p>What is 2^3?</p>
+                <button onclick="submitAnswer('8')">8</button>
+                <button onclick="submitAnswer('6')">6</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function submitAnswer(answer) {
+            const correctAnswers = {
+                '42': true,
+                '12': true,
+                '42': true,
+                '9': true,
+                '36': true,
+                '11': true,
+                '64': true,
+                '3.14': true,
+                '17': true,
+                '8': true
+            };
+            
+            if (correctAnswers[answer]) {
+                alert('Correct!');
+            } else {
+                alert('Incorrect. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

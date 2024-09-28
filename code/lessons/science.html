@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lesson</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Science Lesson</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction to Science</h2>
+            <p>Welcome to the interactive science lesson! Here you will learn about basic science concepts.</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>What is the chemical symbol for water?</p>
+                <button onclick="checkAnswer('H2O')">H2O</button>
+                <button onclick="checkAnswer('O2')">O2</button>
+
+                <h3>Question 2</h3>
+                <p>What planet is known as the Red Planet?</p>
+                <button onclick="checkAnswer('Mars')">Mars</button>
+                <button onclick="checkAnswer('Jupiter')">Jupiter</button>
+
+                <h3>Question 3</h3>
+                <p>What is the process by which plants make their food?</p>
+                <button onclick="checkAnswer('Photosynthesis')">Photosynthesis</button>
+                <button onclick="checkAnswer('Respiration')">Respiration</button>
+
+                <h3>Question 4</h3>
+                <p>What gas do plants release during photosynthesis?</p>
+                <button onclick="checkAnswer('Oxygen')">Oxygen</button>
+                <button onclick="checkAnswer('Carbon Dioxide')">Carbon Dioxide</button>
+
+                <h3>Question 5</h3>
+                <p>What is the largest organ in the human body?</p>
+                <button onclick="checkAnswer('Skin')">Skin</button>
+                <button onclick="checkAnswer('Liver')">Liver</button>
+
+                <h3>Question 6</h3>
+                <p>What is the most abundant gas in the Earth's atmosphere?</p>
+                <button onclick="checkAnswer('Nitrogen')">Nitrogen</button>
+                <button onclick="checkAnswer('Oxygen')">Oxygen</button>
+
+                <h3>Question 7</h3>
+                <p>What is the hardest natural substance on Earth?</p>
+                <button onclick="checkAnswer('Diamond')">Diamond</button>
+                <button onclick="checkAnswer('Gold')">Gold</button>
+
+                <h3>Question 8</h3>
+                <p>What planet is closest to the Sun?</p>
+                <button onclick="checkAnswer('Mercury')">Mercury</button>
+                <button onclick="checkAnswer('Venus')">Venus</button>
+
+                <h3>Question 9</h3>
+                <p>What is the speed of light in a vacuum?</p>
+                <button onclick="checkAnswer('299,792 km/s')">299,792 km/s</button>
+                <button onclick="checkAnswer('150,000 km/s')">150,000 km/s</button>
+
+                <h3>Question 10</h3>
+                <p>What type of energy is stored in food?</p>
+                <button onclick="checkAnswer('Chemical Energy')">Chemical Energy</button>
+                <button onclick="checkAnswer('Kinetic Energy')">Kinetic Energy</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'H2O' ||
+                answer === 'Mars' ||
+                answer === 'Photosynthesis' ||
+                answer === 'Oxygen' ||
+                answer === 'Skin' ||
+                answer === 'Nitrogen' ||
+                answer === 'Diamond' ||
+                answer === 'Mercury' ||
+                answer === '299,792 km/s' ||
+                answer === 'Chemical Energy') {
+                alert('Correct!');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</body>
+</html>

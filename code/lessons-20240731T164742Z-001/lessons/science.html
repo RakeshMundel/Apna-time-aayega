@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lesson</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Science Lesson</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction to Science</h2>
+            <p>Welcome to the interactive science lesson! Here you will learn about basic science concepts.</p>
+            <div class="quiz">
+                <h3>Quick Quiz</h3>
+                <p>What is the chemical symbol for water?</p>
+                <button onclick="checkAnswer('H2O')">H2O</button>
+                <button onclick="checkAnswer('O2')">O2</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'H2O') {
+                alert('Correct!');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Trivia Game</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Science Trivia Game</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Science Trivia</h2>
+            <p>Challenge your knowledge with this science trivia game!</p>
+            <div class="quiz">
+                <h3>Question 1</h3>
+                <p>What is the largest planet in our solar system?</p>
+                <button onclick="submitAnswer('Jupiter')">Jupiter</button>
+                <button onclick="submitAnswer('Earth')">Earth</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function submitAnswer(answer) {
+            if (answer === 'Jupiter') {
+                alert('Correct!');
+            } else {
+                alert('Incorrect. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

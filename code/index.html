@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Education Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Accessible Education Resources</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Welcome</h2>
+                <p>Welcome to the Accessible Education Resources platform. Here you can find interactive lessons, educational games, and additional resources to enhance your learning experience.</p>
+                <img src="asset/welcome.jpg" alt="Welcome Image" class="standard-image animated-image">
+            </div>
+        </section>
+        
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Accessible Education Resources is dedicated to providing inclusive educational materials to learners of all backgrounds and abilities. Our mission is to make learning engaging and accessible for everyone.</p>
+                <img src="asset/about.jpg" alt="About Us Image" class="standard-image animated-image">
+            </div>
+        </section>
+
+        <section id="lessons" class="section">
+            <div class="container">
+                <h2>Interactive Lessons</h2>
+                <div class="grid">
+                    <div class="lesson">
+                        <h3>Mathematics Basics</h3>
+                        <p>Explore interactive lessons on basic mathematics concepts including addition, subtraction, multiplication, and division.</p>
+                        <button onclick="startLesson('math')">Start Lesson</button>
+                        <img src="asset/math.jpg" alt="Math Image" class="standard-image animated-image">
+                    </div>
+                    <div class="lesson">
+                        <h3>Introduction to Science</h3>
+                        <p>Learn the basics of science through interactive activities and quizzes that will include theory and practical as well.</p>
+                        <button onclick="startLesson('science')">Start Lesson</button>
+                        <img src="asset/science.jpg" alt="Science Image" class="standard-image animated-image">
+                    </div>
+                    <div class="lesson">
+                        <h3>Language <br>Arts</h3>
+                        <p>Improve your language skills with interactive lessons on grammar, vocabulary, and reading comprehension.</p>
+                        <button onclick="startLesson('language')">Start Lesson</button>
+                        <img src="asset/language.jpg" alt="Language Arts Image" class="standard-image animated-image">
+                    </div>
+                    <div class="lesson">
+                        <h3>History and Geography</h3>
+                        <p>Dive into the history and geography of different cultures and regions through engaging lessons.</p>
+                        <button onclick="startLesson('history')">Start Lesson</button>
+                        <img src="asset/history.jpg" alt="History Image" class="standard-image animated-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <div class="container">
+                <h2>Educational Games</h2>
+                <div class="grid">
+                    <div class="game">
+                        <h3>Math Quiz</h3>
+                        <p>Test your math skills with this fun quiz game.</p>
+                        <button onclick="playGame('mathQuiz')">Play Game</button>
+                        <img src="asset/math_quiz.jpg" alt="Math Quiz Image" class="standard-image animated-image">
+                    </div>
+                    <div class="game">
+                        <h3>Science Trivia</h3>
+                        <p>Challenge your knowledge with this science trivia game.</p>
+                        <button onclick="playGame('scienceTrivia')">Play Game</button>
+                        <img src="asset/science_trivia.jpg" alt="Science Trivia Image" class="standard-image animated-image">
+                    </div>
+                    <div class="game">
+                        <h3>Word Search</h3>
+                        <p>Improve your vocabulary with this game.</p>
+                        <button onclick="playGame('wordSearch')">Play Game</button>
+                        <img src="asset/word_search.jpg" alt="Word Search Image" class="standard-image animated-image">
+                    </div>
+                    <div class="game">
+                        <h3>Geo Challenge</h3>
+                        <p>Test your geography knowledge.</p>
+                        <button onclick="playGame('geoChallenge')">Play Game</button>
+                        <img src="asset/geo_challenge.jpg" alt="Geography Challenge Image" class="standard-image animated-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <div class="container">
+                <h2>Additional Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+                    <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+                    <li><a href="https://www.edx.org" target="_blank">edX</a></li>
+                    <li><a href="https://www.scholastic.com" target="_blank">Scholastic</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonial-slider">
+                    <button class="slider-arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial-slide">
+                            <p>"Accessible Education Resources has revolutionized the way my students learn. The interactive lessons keep them engaged and excited about their studies!"</p>
+                            <p><strong>- Sarah W., Elementary School Teacher</strong></p>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p>"The educational games are a huge hit with my kids. They love playing and learning at the same time."</p>
+                            <p><strong>- John D., Parent</strong></p>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p>"As a tutor, I find the resources invaluable. They are well-organized and cater to different learning styles."</p>
+                            <p><strong>- Maria S., Private Tutor</strong></p>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p>"The platform's interactive lessons are fantastic for engaging students. Highly recommended for anyone looking to enhance their teaching methods."</p>
+                            <p><strong>- Mark L., High School Teacher</strong></p>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p>"My children have shown great improvement in their studies thanks to these well-designed educational resources."</p>
+                            <p><strong>- Emily R., Parent</strong></p>
+                        </div>
+                    </div>
+                    <button class="slider-arrow next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>What is Accessible Education Resources?</h3>
+                    <p>Accessible Education Resources is an online platform that provides interactive lessons, educational games, and additional resources for learners of all ages and abilities.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I access the lessons and games?</h3>
+                    <p>Simply click on the "Start Lesson" or "Play Game" buttons in the respective sections to begin.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there a cost to use the platform?</h3>
+                    <p>No, all our resources are free to use.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I contact you for more information?</h3>
+                    <p>You can reach out to us through the contact form in the "Contact" section below.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Accessible Education Resources</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

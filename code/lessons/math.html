@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Lesson</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Math Lesson</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Mathematics Basics</h2>
+            <p>Welcome to the interactive math lesson! Here you will learn about basic mathematics concepts.</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>What is 5 + 3?</p>
+                <button onclick="checkAnswer('8')">8</button>
+                <button onclick="checkAnswer('10')">10</button>
+
+                <h3>Question 2</h3>
+                <p>What is 9 - 4?</p>
+                <button onclick="checkAnswer('5')">5</button>
+                <button onclick="checkAnswer('6')">6</button>
+
+                <h3>Question 3</h3>
+                <p>What is 7 x 3?</p>
+                <button onclick="checkAnswer('21')">21</button>
+                <button onclick="checkAnswer('24')">24</button>
+
+                <h3>Question 4</h3>
+                <p>What is 12 / 4?</p>
+                <button onclick="checkAnswer('3')">3</button>
+                <button onclick="checkAnswer('4')">4</button>
+
+                <h3>Question 5</h3>
+                <p>What is 2^3?</p>
+                <button onclick="checkAnswer('8')">8</button>
+                <button onclick="checkAnswer('6')">6</button>
+
+                <h3>Question 6</h3>
+                <p>What is 15 % 4?</p>
+                <button onclick="checkAnswer('3')">3</button>
+                <button onclick="checkAnswer('4')">4</button>
+
+                <h3>Question 7</h3>
+                <p>What is the square root of 64?</p>
+                <button onclick="checkAnswer('8')">8</button>
+                <button onclick="checkAnswer('10')">10</button>
+
+                <h3>Question 8</h3>
+                <p>What is 5 x 5?</p>
+                <button onclick="checkAnswer('25')">25</button>
+                <button onclick="checkAnswer('30')">30</button>
+
+                <h3>Question 9</h3>
+                <p>What is 100 - 45?</p>
+                <button onclick="checkAnswer('55')">55</button>
+                <button onclick="checkAnswer('50')">50</button>
+
+                <h3>Question 10</h3>
+                <p>What is 6 + 6?</p>
+                <button onclick="checkAnswer('12')">12</button>
+                <button onclick="checkAnswer('10')">10</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === '8' ||
+                answer === '5' ||
+                answer === '21' ||
+                answer === '3' ||
+                answer === '8' ||
+                answer === '3' ||
+                answer === '8' ||
+                answer === '25' ||
+                answer === '55' ||
+                answer === '12') {
+                alert('Correct!');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</body>
+</html>

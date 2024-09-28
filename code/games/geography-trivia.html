@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Trivia Game</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Geography Trivia Game</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Geography Trivia</h2>
+            <p>Test your knowledge of geography with this fun trivia game!</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>What is the capital city of France?</p>
+                <button onclick="submitAnswer('Paris')">Paris</button>
+                <button onclick="submitAnswer('Rome')">Rome</button>
+
+                <h3>Question 2</h3>
+                <p>Which country has the largest population?</p>
+                <button onclick="submitAnswer('China')">China</button>
+                <button onclick="submitAnswer('India')">India</button>
+
+                <h3>Question 3</h3>
+                <p>What is the longest river in the world?</p>
+                <button onclick="submitAnswer('Nile')">Nile</button>
+                <button onclick="submitAnswer('Amazon')">Amazon</button>
+
+                <h3>Question 4</h3>
+                <p>Which continent is known as the "Land Down Under"?</p>
+                <button onclick="submitAnswer('Australia')">Australia</button>
+                <button onclick="submitAnswer('South America')">South America</button>
+
+                <h3>Question 5</h3>
+                <p>Which is the smallest country in the world?</p>
+                <button onclick="submitAnswer('Vatican City')">Vatican City</button>
+                <button onclick="submitAnswer('Monaco')">Monaco</button>
+
+                <h3>Question 6</h3>
+                <p>What is the official language of Brazil?</p>
+                <button onclick="submitAnswer('Portuguese')">Portuguese</button>
+                <button onclick="submitAnswer('Spanish')">Spanish</button>
+
+                <h3>Question 7</h3>
+                <p>Which country is known as the "Land of the Rising Sun"?</p>
+                <button onclick="submitAnswer('Japan')">Japan</button>
+                <button onclick="submitAnswer('China')">China</button>
+
+                <h3>Question 8</h3>
+                <p>What is the capital city of Canada?</p>
+                <button onclick="submitAnswer('Ottawa')">Ottawa</button>
+                <button onclick="submitAnswer('Toronto')">Toronto</button>
+
+                <h3>Question 9</h3>
+                <p>Which mountain range separates Europe and Asia?</p>
+                <button onclick="submitAnswer('Ural')">Ural</button>
+                <button onclick="submitAnswer('Himalayas')">Himalayas</button>
+
+                <h3>Question 10</h3>
+                <p>Which ocean is the largest?</p>
+                <button onclick="submitAnswer('Pacific Ocean')">Pacific Ocean</button>
+                <button onclick="submitAnswer('Atlantic Ocean')">Atlantic Ocean</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function submitAnswer(answer) {
+            const correctAnswers = {
+                'Paris': true,
+                'China': true,
+                'Nile': true,
+                'Australia': true,
+                'Vatican City': true,
+                'Portuguese': true,
+                'Japan': true,
+                'Ottawa': true,
+                'Ural': true,
+                'Pacific Ocean': true
+            };
+            
+            if (correctAnswers[answer]) {
+                alert('Correct!');
+            } else {
+                alert('Incorrect. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

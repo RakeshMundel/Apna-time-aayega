@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Lesson</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>History Lesson</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction to History</h2>
+            <p>Explore key events and figures in history through interactive content.</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>Who was the first President of the United States?</p>
+                <button onclick="checkAnswer('George Washington')">George Washington</button>
+                <button onclick="checkAnswer('Abraham Lincoln')">Abraham Lincoln</button>
+
+                <h3>Question 2</h3>
+                <p>What year did the Titanic sink?</p>
+                <button onclick="checkAnswer('1912')">1912</button>
+                <button onclick="checkAnswer('1915')">1915</button>
+
+                <h3>Question 3</h3>
+                <p>Who was the leader of the Soviet Union during World War II?</p>
+                <button onclick="checkAnswer('Joseph Stalin')">Joseph Stalin</button>
+                <button onclick="checkAnswer('Leon Trotsky')">Leon Trotsky</button>
+
+                <h3>Question 4</h3>
+                <p>Which empire was ruled by Julius Caesar?</p>
+                <button onclick="checkAnswer('Roman Empire')">Roman Empire</button>
+                <button onclick="checkAnswer('Ottoman Empire')">Ottoman Empire</button>
+
+                <h3>Question 5</h3>
+                <p>What was the main cause of World War I?</p>
+                <button onclick="checkAnswer('Assassination of Archduke Franz Ferdinand')">Assassination of Archduke Franz Ferdinand</button>
+                <button onclick="checkAnswer('The Rise of Fascism')">The Rise of Fascism</button>
+
+                <h3>Question 6</h3>
+                <p>In what year did the Berlin Wall fall?</p>
+                <button onclick="checkAnswer('1989')">1989</button>
+                <button onclick="checkAnswer('1991')">1991</button>
+
+                <h3>Question 7</h3>
+                <p>Who was the first woman to fly solo across the Atlantic Ocean?</p>
+                <button onclick="checkAnswer('Amelia Earhart')">Amelia Earhart</button>
+                <button onclick="checkAnswer('Bessie Coleman')">Bessie Coleman</button>
+
+                <h3>Question 8</h3>
+                <p>Which historical figure is known for his nonviolent resistance against British rule in India?</p>
+                <button onclick="checkAnswer('Mahatma Gandhi')">Mahatma Gandhi</button>
+                <button onclick="checkAnswer('Jawaharlal Nehru')">Jawaharlal Nehru</button>
+
+                <h3>Question 9</h3>
+                <p>What ancient wonder was located in Babylon?</p>
+                <button onclick="checkAnswer('Hanging Gardens')">Hanging Gardens</button>
+                <button onclick="checkAnswer('Great Pyramid of Giza')">Great Pyramid of Giza</button>
+
+                <h3>Question 10</h3>
+                <p>Who was the British Prime Minister during World War II?</p>
+                <button onclick="checkAnswer('Winston Churchill')">Winston Churchill</button>
+                <button onclick="checkAnswer('Neville Chamberlain')">Neville Chamberlain</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'George Washington' ||
+                answer === '1912' ||
+                answer === 'Joseph Stalin' ||
+                answer === 'Roman Empire' ||
+                answer === 'Assassination of Archduke Franz Ferdinand' ||
+                answer === '1989' ||
+                answer === 'Amelia Earhart' ||
+                answer === 'Mahatma Gandhi' ||
+                answer === 'Hanging Gardens' ||
+                answer === 'Winston Churchill') {
+                alert('Correct!');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</body>
+</html>

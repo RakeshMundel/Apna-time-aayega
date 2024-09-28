@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Lesson</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>History Lesson</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction to History</h2>
+            <p>Explore key events and figures in history through interactive content.</p>
+            <div class="quiz">
+                <h3>Quick Quiz</h3>
+                <p>Who was the first President of the United States?</p>
+                <button onclick="checkAnswer('George Washington')">George Washington</button>
+                <button onclick="checkAnswer('Abraham Lincoln')">Abraham Lincoln</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'George Washington') {
+                alert('Correct!');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</body>
+</html>

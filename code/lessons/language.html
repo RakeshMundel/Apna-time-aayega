@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Lesson</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Language Lesson</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Basics of Language Learning</h2>
+            <p>Learn basic language concepts and vocabulary through interactive activities.</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>What is the Spanish word for "Hello"?</p>
+                <button onclick="checkAnswer('Hola')">Hola</button>
+                <button onclick="checkAnswer('Bonjour')">Bonjour</button>
+
+                <h3>Question 2</h3>
+                <p>How do you say "Goodbye" in French?</p>
+                <button onclick="checkAnswer('Au revoir')">Au revoir</button>
+                <button onclick="checkAnswer('Adiós')">Adiós</button>
+
+                <h3>Question 3</h3>
+                <p>What is the German word for "Thank you"?</p>
+                <button onclick="checkAnswer('Danke')">Danke</button>
+                <button onclick="checkAnswer('Merci')">Merci</button>
+
+                <h3>Question 4</h3>
+                <p>How do you say "Please" in Japanese?</p>
+                <button onclick="checkAnswer('お願いします')">お願いします (Onegaishimasu)</button>
+                <button onclick="checkAnswer('Gracias')">Gracias</button>
+
+                <h3>Question 5</h3>
+                <p>What is the Italian word for "Friend"?</p>
+                <button onclick="checkAnswer('Amico')">Amico</button>
+                <button onclick="checkAnswer('Freund')">Freund</button>
+
+                <h3>Question 6</h3>
+                <p>What is the word for "Family" in Chinese?</p>
+                <button onclick="checkAnswer('家庭')">家庭 (Jiātíng)</button>
+                <button onclick="checkAnswer('Familia')">Familia</button>
+
+                <h3>Question 7</h3>
+                <p>How do you say "Water" in Russian?</p>
+                <button onclick="checkAnswer('Вода')">Вода (Voda)</button>
+                <button onclick="checkAnswer('Agua')">Agua</button>
+
+                <h3>Question 8</h3>
+                <p>What is the Portuguese word for "Book"?</p>
+                <button onclick="checkAnswer('Livro')">Livro</button>
+                <button onclick="checkAnswer('Buch')">Buch</button>
+
+                <h3>Question 9</h3>
+                <p>How do you say "Good morning" in Korean?</p>
+                <button onclick="checkAnswer('좋은 아침')">좋은 아침 (Joeun achim)</button>
+                <button onclick="checkAnswer('Bom dia')">Bom dia</button>
+
+                <h3>Question 10</h3>
+                <p>What is the Dutch word for "House"?</p>
+                <button onclick="checkAnswer('Huis')">Huis</button>
+                <button onclick="checkAnswer('Casa')">Casa</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'Hola' ||
+                answer === 'Au revoir' ||
+                answer === 'Danke' ||
+                answer === 'お願いします' ||
+                answer === 'Amico' ||
+                answer === '家庭' ||
+                answer === 'Вода' ||
+                answer === 'Livro' ||
+                answer === '좋은 아침' ||
+                answer === 'Huis') {
+                alert('Correct!');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</body>
+</html>

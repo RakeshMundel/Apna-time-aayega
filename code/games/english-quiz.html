@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz Game</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>English Quiz Game</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>English Quiz</h2>
+            <p>Test your English language skills with this interactive quiz game!</p>
+            <div class="quiz">
+                <!-- Questions -->
+                <h3>Question 1</h3>
+                <p>What is the plural form of "child"?</p>
+                <button onclick="submitAnswer('Children')">Children</button>
+                <button onclick="submitAnswer('Childs')">Childs</button>
+
+                <h3>Question 2</h3>
+                <p>Which word is a synonym for "happy"?</p>
+                <button onclick="submitAnswer('Joyful')">Joyful</button>
+                <button onclick="submitAnswer('Sad')">Sad</button>
+
+                <h3>Question 3</h3>
+                <p>What is the past tense of "go"?</p>
+                <button onclick="submitAnswer('Went')">Went</button>
+                <button onclick="submitAnswer('Gone')">Gone</button>
+
+                <h3>Question 4</h3>
+                <p>Which sentence is grammatically correct?</p>
+                <button onclick="submitAnswer('She is running.')">She is running.</button>
+                <button onclick="submitAnswer('She running.')">She running.</button>
+
+                <h3>Question 5</h3>
+                <p>What is the opposite of "difficult"?</p>
+                <button onclick="submitAnswer('Easy')">Easy</button>
+                <button onclick="submitAnswer('Hard')">Hard</button>
+
+                <h3>Question 6</h3>
+                <p>Which word is a noun?</p>
+                <button onclick="submitAnswer('Book')">Book</button>
+                <button onclick="submitAnswer('Run')">Run</button>
+
+                <h3>Question 7</h3>
+                <p>What is the comparative form of "good"?</p>
+                <button onclick="submitAnswer('Better')">Better</button>
+                <button onclick="submitAnswer('Best')">Best</button>
+
+                <h3>Question 8</h3>
+                <p>Which of the following is a preposition?</p>
+                <button onclick="submitAnswer('Under')">Under</button>
+                <button onclick="submitAnswer('Quickly')">Quickly</button>
+
+                <h3>Question 9</h3>
+                <p>What is the singular form of "geese"?</p>
+                <button onclick="submitAnswer('Goose')">Goose</button>
+                <button onclick="submitAnswer('Geese')">Geese</button>
+
+                <h3>Question 10</h3>
+                <p>Which word is an adjective?</p>
+                <button onclick="submitAnswer('Beautiful')">Beautiful</button>
+                <button onclick="submitAnswer('Walk')">Walk</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function submitAnswer(answer) {
+            const correctAnswers = {
+                'Children': true,
+                'Joyful': true,
+                'Went': true,
+                'She is running.': true,
+                'Easy': true,
+                'Book': true,
+                'Better': true,
+                'Under': true,
+                'Goose': true,
+                'Beautiful': true
+            };
+            
+            if (correctAnswers[answer]) {
+                alert('Correct!');
+            } else {
+                alert('Incorrect. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

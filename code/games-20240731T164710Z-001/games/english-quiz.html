@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz Game</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>English Quiz Game</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>English Quiz</h2>
+            <p>Test your English language skills with this interactive quiz game!</p>
+            <div class="quiz">
+                <h3>Question 1</h3>
+                <p>What is the plural form of "child"?</p>
+                <button onclick="submitAnswer('Children')">Children</button>
+                <button onclick="submitAnswer('Childs')">Childs</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Education Resources</p>
+    </footer>
+    <script>
+        function submitAnswer(answer) {
+            if (answer === 'Children') {
+                alert('Correct!');
+            } else {
+                alert('Incorrect. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
